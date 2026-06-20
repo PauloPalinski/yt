@@ -26,7 +26,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
   if (params.get('order')) {
     ttq.ready(function () {
       if (email || phone) ttq.identify({ email: email, phone_number: phone });
-      ttq.track('CompletePayment', {
+      ttq.track('Purchase', {
         contents: [{ content_id: 'PROD_001', content_type: 'product', content_name: 'NOME_DO_PRODUTO' }],
         value: 37.00,
         currency: 'USD'
