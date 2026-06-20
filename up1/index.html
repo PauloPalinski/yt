@@ -19,6 +19,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 }(window, document, 'ttq');
 (function () {
   var params = new URLSearchParams(window.location.search);
+  var valor   = parseFloat(params.get('valor')) || 37.00;
   var orderId = params.get('order') || ('order_' + Date.now());
   var email = params.get('email') || '';
   var phone = params.get('phone') || '';
